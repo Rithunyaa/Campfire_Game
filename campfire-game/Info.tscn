@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://d0r3g4yr0v1qv"]
+
+[ext_resource type="Script" uid="uid://bqnijb53kxo8p" path="res://control.gd" id="1_xaqnp"]
+[ext_resource type="Texture2D" uid="uid://veskfdcwdbf0" path="res://images/Info Screen.png" id="2_lai0j"]
+[ext_resource type="FontFile" uid="uid://dckbrliaj3ek0" path="res://images/HomeScreen Font.ttf" id="3_ao2bk"]
+
+[node name="Control" type="Control" unique_id=1084842989]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xaqnp")
+
+[node name="InfoScreen" type="Sprite2D" parent="." unique_id=1735669740]
+position = Vector2(570.50006, 350.99997)
+scale = Vector2(2.0467937, 2.3187068)
+texture = ExtResource("2_lai0j")
+
+[node name="Button" type="Button" parent="." unique_id=1565714275]
+layout_mode = 0
+offset_left = 773.0
+offset_top = 506.0
+offset_right = 1050.0
+offset_bottom = 630.0
+theme_override_colors/font_color = Color(0.8657935, 0.8779902, 0.87376237, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_constants/icon_max_width = 20
+theme_override_fonts/font = ExtResource("3_ao2bk")
+theme_override_font_sizes/font_size = 115
+text = "Next"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

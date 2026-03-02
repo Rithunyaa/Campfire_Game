@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c30enwo2jc5if"]
+
+[ext_resource type="Texture2D" uid="uid://cyxkm7aqw6kqs" path="res://images/New Drawing4 (3).jpg" id="1_yqk5q"]
+
+[node name="Node2D" type="Node2D" unique_id=917235920]
+
+[node name="NewDrawing4(3)" type="Sprite2D" parent="." unique_id=490175465]
+position = Vector2(581, 324.5)
+scale = Vector2(0.62604165, 0.6490741)
+texture = ExtResource("1_yqk5q")

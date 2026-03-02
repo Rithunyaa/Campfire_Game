@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://hlcxn4wo268a"]
+
+[ext_resource type="Script" uid="uid://bmunpp5q6qulx" path="res://homescreen.gd" id="1_80n44"]
+[ext_resource type="Texture2D" uid="uid://bfylel0042180" path="res://images/Homescreen Background.png" id="1_wmn14"]
+[ext_resource type="FontFile" uid="uid://dckbrliaj3ek0" path="res://images/HomeScreen Font.ttf" id="2_ug7h0"]
+
+[node name="Control" type="Control" unique_id=240754529]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_80n44")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1724394013]
+position = Vector2(579.5, 328.5)
+scale = Vector2(2.258755, 1.8065395)
+texture = ExtResource("1_wmn14")
+
+[node name="Button" type="Button" parent="." unique_id=1030075784]
+layout_mode = 0
+offset_left = 383.0
+offset_top = 263.0
+offset_right = 836.0
+offset_bottom = 538.0
+theme_override_colors/font_color = Color(0.8657935, 0.8779902, 0.87376237, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_constants/icon_max_width = 20
+theme_override_fonts/font = ExtResource("2_ug7h0")
+theme_override_font_sizes/font_size = 150
+text = "Start"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

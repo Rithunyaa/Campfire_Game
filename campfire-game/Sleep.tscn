@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c345lmlv1owxq"]
+
+[ext_resource type="Texture2D" uid="uid://duqp0888ncf70" path="res://images/Sleep_Scene.jpg" id="1_avh7a"]
+[ext_resource type="Script" uid="uid://d1wvyto3m1h8h" path="res://sleep.gd" id="1_pwijp"]
+
+[node name="Node2D" type="Node2D" unique_id=1230160913]
+script = ExtResource("1_pwijp")
+
+[node name="SleepScene" type="Sprite2D" parent="." unique_id=214123193]
+position = Vector2(585, 320.99997)
+scale = Vector2(0.60989594, 0.6314815)
+texture = ExtResource("1_avh7a")
